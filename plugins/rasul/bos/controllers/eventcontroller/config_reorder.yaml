@@ -1,0 +1,4 @@
+title: EventController
+modelClass: Rasul\Bos\Models\Event
+toolbar:
+    buttons: reorder_toolbar

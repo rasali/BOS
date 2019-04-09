@@ -1,0 +1,86 @@
+title = "Contact"
+url = "/contact"
+layout = "default"
+is_hidden = 0
+
+[contact]
+==
+<main class="contact_page">
+			<div class="slider" style="background-image: url('{{ 'assets/img/contactbg.png'|theme }}')">
+				<div class="slider_text">
+					<div class="site_container">
+						<h2>contact us</h2>
+					</div>
+				</div>
+			</div>
+			<div class="site_container">
+				<div class="row">
+					<section class="section_contact col-lg-5 col-md-6">
+						<div class="form_wrapper">
+							<h2>Send message</h2>
+							<form data-request="onSend">
+								<div class="row">
+									<div class="form-group col-md-6">
+										<input name="name" type="text" class="form-control" placeholder="Name">
+									</div>
+									<div class="form-group col-md-6">
+										<input name="surname" type="text" class="form-control" placeholder="Surname">
+									</div>
+									<div class="form-group col-md-12">
+										<input name="email" type="email" class="form-control" placeholder="Email">
+									</div>
+									<div class="form-group col-md-4">
+									    <select type="text" class="selectpicker form-control" title="Country code">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+									</div>
+									<div class="form-group col-md-8">
+										<input name="phone" type="phone" class="form-control" placeholder="Phone">
+									</div>
+									<div class="form-group col-md-12">
+										<textarea name="content" class="form-control" placeholder="Message"></textarea>
+									</div>
+								</div>
+								<button type="submit" class="submit">SEND</button>
+							</form>
+						</div>
+					</section>
+					<section class="section_contact col-md-6 offset-lg-1">
+						<div id="map"></div>
+						<div class="contact_info">
+							<h2>Contact information</h2>
+							<div><i class="material-icons">&#xe0c8</i><span>Baku Ox ford School, Abbaszadeh Str 8, AZ 1004, Baku, Azerbaijan</span></div>
+	                        <div><i class="material-icons">&#xe0cd</i><span><a href="">(+994 12) 404 13 30</a></span></div>
+	                        <div><i class="material-icons">&#xe8ad</i><span>(+994 12) 404 13 29</span></div>
+	                        <div><i class="material-icons">&#xe158</i><span><a href="mailto:">info@bos.edu.az</a> <br/><a href="mailto:">admission@bos.edu.az</a></span></div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+
+<script>
+    function initMap() {
+        var _position = {lat: 40.414483, lng: 49.8558967};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: _position,
+            disableDefaultUI: true,
+            streetViewControl: false,
+            zoomControl: false,
+        });
+        var marker = new google.maps.Marker({
+            position: _position,
+            map: map,
+            icon: {
+                url: "img/location_on.png",
+            }
+        });
+
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvRF6OqEKBlvoCCAWo30nK2Pg-X0CPkkc&callback=initMap">
+</script>

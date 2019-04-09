@@ -1,0 +1,246 @@
+title = "Homepage"
+url = "/"
+layout = "default"
+is_hidden = 0
+
+[slider]
+
+[missions]
+
+[educations]
+
+[events]
+
+[news]
+
+[statistics]
+==
+<main class="">
+    <div class="slider-main owl-carousel">
+        {% for slide in slider %}
+            <div class="slider_item">
+                <img src={{ slide.image.path }}>
+                <div class="slider_text">
+                    <div class="site_container">
+                        <h1>{{ slide.title }}</h1>
+                        <p>{{ slide.description }}</p>
+                        <a href="">read more</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <section class="mission">
+        <div class="site_container">
+            <h1 class="section_title"><span>our mission</span></h1>
+            <p class="mission_info">Baku Oxford School offers an international and intercultural perspective of the world where students’ unique qualities are valued and learner differences accommodated. Life-long learning and leadership is fostered th rough self-motivation, creativity and critical thinking.</p>
+            <div class="mission-slider owl-carousel">
+                {% for mission in missions %}
+                    <div>
+                        <img src={{ mission.icon.path }}>
+                        <div class="mission_item">
+                            <h3>{{ mission.name }}</h3>
+                            <hr/>
+                            <p>{{ mission.text }}/p>
+                        </div>
+                    </div>
+                {% endfor %}
+
+        </div>
+        </div>
+    </section>
+    <section class="education">
+        <div class="site_container">
+            <h1 class="section_title"><span class="white-bg">education</span></h1>
+            <p class="education_info">Baku Oxford School offers an international and intercultural perspective of the world where students’ unique qualities are valued and learner differences accommodated. Life-long learning and leadership is fostered through self-motivation, creativity and critical thinking </p>
+            <div class="education-slider owl-carousel">
+                {% for edu in educations %}
+                    <div class="education_item">
+                        <img src={{ edu.icon.path }}>
+                        <h3>{{ edu.title }}</h3>
+                        <hr/>
+                        <p>{{ edu.description }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section class="events">
+        <div class="site_container">
+            <h1 class="section_title"><span>events</span></h1>
+            <div class="row">
+                {% for event in events %}
+                    <div class="col-lg-6">
+                        <div class="events_item">
+                            <div class="events_date">
+                                <p>{{ event.event_date | strftime('%m') }}</p>
+                                <p>{{ event.event_date | strftime('%d') }}</p>
+                                <p>{{ event.event_date | strftime('%w') }}</p>
+                            </div>
+                            <div class="events_info">
+                                <a href="{{ 'event-detail'|page({ slug:event.slug  }) }}">{{ event.title }}</a>
+                                <p><i class="material-icons">&#xe192</i><span>{{ event.time| strftime('%H:%M') }}</span></p>
+                                <p><i class="material-icons">&#xe0c8</i><span>{{ event.location }}</span></p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="site_container">
+            <h1 class="section_title"><span>news</span></h1>
+            <div class="row">
+                {% for new in news %}
+                    <div class="col-md-4">
+                        <article class="news_item">
+                            <div class="news_img">
+                                <a href="{{ 'news-detail'|page({ slug:new.slug  }) }}"><img src={{ new.image.path }}></a>
+                            </div>
+                            <div class="news_info">
+                                <a href="{{ 'news-detail'|page({ slug:new.slug  }) }}"><h3>{{ new.title }}</h3></a>
+                                <p><i class="material-icons">&#xe192</i><span>{{ new.created_at| strftime('%d.%m.%Y')  }}</span></p>
+                                <a href="{{ 'news-detail'|page({ slug:new.slug  }) }}" class="read_more">READ MORE</a>
+                            </div>
+                        </article>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section class="count">
+        <div class="site_container">
+            <div class="count-slider owl-carousel">
+                {% for stat in statistics %}
+                    <div class="count_item">
+                        <p>{{ stat.count }}</p>
+                        <img src="{{ 'assets/img/count.png'|theme }}">
+                        <p>{{ stat.name }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {#<section class="instagram_wrapper">#}
+        {#<h1 class="section_title"><span class="insta-logo"><img src="img/insta-logo.png"></span></h1>#}
+        {#<h2>#bakuoxfordschool</h2>#}
+        {#<div class="instagram_gallery">#}
+
+            {#<div class="gallery-default owl-carousel">#}
+                {#<a href="#" class="insta-link" target="_blank">#}
+                    {#<img src="img/insta1.png" alt="instagram">#}
+                    {#<div class="img-info">#}
+								{#<span>#}
+									{#<img src="img/insta.png" alt="">#}
+									{#<p>@bakuoxfordschool</p>#}
+								{#</span>#}
+                    {#</div>#}
+                {#</a>#}
+
+                {#<a href="#" class="insta-link" target="_blank">#}
+                    {#<img src="img/insta2.png" alt="instagram">#}
+                    {#<div class="img-info">#}
+								{#<span>#}
+									{#<img src="img/insta.png" alt="">#}
+									{#<p>@bakuoxfordschool</p>#}
+								{#</span>#}
+                    {#</div>#}
+                {#</a>#}
+
+                {#<a href="#" class="insta-link" target="_blank">#}
+                    {#<img src="img/insta3.png" alt="instagram">#}
+                    {#<div class="img-info">#}
+								{#<span>#}
+									{#<img src="img/insta.png" alt="">#}
+									{#<p>@bakuoxfordschool</p>#}
+								{#</span>#}
+                    {#</div>#}
+                {#</a>#}
+
+                {#<a href="#" class="insta-link" target="_blank">#}
+                    {#<img src="img/insta4.png" alt="instagram">#}
+                    {#<div class="img-info">#}
+								{#<span>#}
+									{#<img src="img/insta.png" alt="">#}
+									{#<p>@bakuoxfordschool</p>#}
+								{#</span>#}
+                    {#</div>#}
+                {#</a>#}
+
+                {#<a href="#" class="insta-link" target="_blank">#}
+                    {#<img src="img/insta5.png" alt="instagram">#}
+                    {#<div class="img-info">#}
+								{#<span>#}
+									{#<img src="img/insta.png" alt="">#}
+									{#<p>@bakuoxfordschool</p>#}
+								{#</span>#}
+                    {#</div>#}
+                {#</a>#}
+
+                {#<a href="#" class="insta-link" target="_blank">#}
+                    {#<img src="img/insta6.png" alt="instagram">#}
+                    {#<div class="img-info">#}
+								{#<span>#}
+									{#<img src="img/insta.png" alt="">#}
+									{#<p>@bakuoxfordschool</p>#}
+								{#</span>#}
+                    {#</div>#}
+                {#</a>#}
+
+                {#<a href="#" class="insta-link" target="_blank">#}
+                    {#<img src="img/insta7.png" alt="instagram">#}
+                    {#<div class="img-info">#}
+								{#<span>#}
+									{#<img src="img/insta.png" alt="">#}
+									{#<p>@bakuoxfordschool</p>#}
+								{#</span>#}
+                    {#</div>#}
+                {#</a>#}
+
+                {#<a href="#" class="insta-link" target="_blank">#}
+                    {#<img src="img/insta8.png" alt="instagram">#}
+                    {#<div class="img-info">#}
+								{#<span>#}
+									{#<img src="img/insta.png" alt="">#}
+									{#<p>@bakuoxfordschool</p>#}
+								{#</span>#}
+                    {#</div>#}
+                {#</a>#}
+
+                {#<a href="#" class="insta-link" target="_blank">#}
+                    {#<img src="img/insta9.png" alt="instagram">#}
+                    {#<div class="img-info">#}
+								{#<span>#}
+									{#<img src="img/insta.png" alt="">#}
+									{#<p>@bakuoxfordschool</p>#}
+								{#</span>#}
+                    {#</div>#}
+                {#</a>#}
+
+                {#<a href="https://www.instagram.com/p/Bajb3fJh0LH" class="insta-link" target="_blank">#}
+                    {#<img src="img/insta10.png" alt="instagram">#}
+                    {#<div class="img-info">#}
+								{#<span>#}
+									{#<img src="img/insta.png" alt="">#}
+									{#<p>@bakuoxfordschool</p>#}
+								{#</span>#}
+                    {#</div>#}
+                {#</a>#}
+
+                {#<a href="https://www.instagram.com/p/BZ8LBsfl9t0" class="insta-link" target="_blank">#}
+                    {#<img src="img/insta11.png" alt="instagram">#}
+                    {#<div class="img-info">#}
+								{#<span>#}
+									{#<img src="img/insta.png" alt="">#}
+									{#<p>@bakuoxfordschool</p>#}
+								{#</span>#}
+                    {#</div>#}
+                {#</a>#}
+            {#</div>#}
+
+
+        {#</div>#}
+
+    </section>
+</main>

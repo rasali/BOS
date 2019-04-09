@@ -1,0 +1,78 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>BOS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/libs/normalize.css/normalize.css'|theme }}">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/libs/bootstrap/dist/css/bootstrap.min.css'|theme }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/libs/owl.carousel/owl.carousel.min.css'|theme }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/libs/animate.css/animate.min.css'|theme }}">
+
+    <link rel="stylesheet" href="{{ 'assets/css/main/main.min.css'|theme }}">
+</head>
+<body>
+{% partial "header" %}
+
+{% page %}
+
+{% partial "footer" %}
+
+<script>window.jQuery || document.write('<script src="{{ 'assets/libs/jquery/dist/jquery.min.js'|theme }}"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="{{ 'assets/libs/bootstrap/dist/js/bootstrap.min.js'|theme }}" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<script type="text/javascript" src="{{ 'assets/libs/owl.carousel/owl.carousel.min.js'|theme }}"></script>
+
+<script type="text/javascript" src="{{ 'assets/libs/owl.carousel/owl.carousel.min.js'|theme }}"></script>
+
+<script src="{{ 'assets/libs/owl.carousel/owl.carousel.min.js'|theme }}"></script>
+<script src="{{ 'assets/libs/jquery-ui/jquery-ui.js'|theme }}"></script>
+<script src="{{ 'assets/js/all.js'|theme }}"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.
+<script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+</script>-->
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+<!-- <script>
+    $(document).on('click' , 'header .navbar-toggler-icon.material-icons' , function() {
+        $('header .navbar .navbar-collapse>.material-icons').show();
+    })
+    $(document).on('click' , 'header .navbar .navbar-collapse.show>.material-icons' , function() {
+        $('.navbar-collapse.collapse').removeClass('show');
+    })
+</script> -->
+{% framework extras %}
+{% scripts %}
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+name: StatisticController
+form: $/rasul/bos/models/statistic/fields.yaml
+modelClass: Rasul\Bos\Models\Statistic
+defaultRedirect: rasul/bos/statisticcontroller
+create:
+    redirect: 'rasul/bos/statisticcontroller/update/:id'
+    redirectClose: rasul/bos/statisticcontroller
+update:
+    redirect: rasul/bos/statisticcontroller
+    redirectClose: rasul/bos/statisticcontroller

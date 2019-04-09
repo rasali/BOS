@@ -1,0 +1,29 @@
+fields:
+    title:
+        label: Title
+        span: auto
+        type: text
+    description:
+        label: Description
+        span: auto
+        type: text
+    link:
+        label: Link
+        span: auto
+        type: text
+    image:
+        label: Image
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    is_active:
+        label: Status
+        span: auto
+        options:
+            - Deactive
+            - Active
+        type: dropdown

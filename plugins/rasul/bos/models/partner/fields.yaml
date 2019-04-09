@@ -1,0 +1,25 @@
+fields:
+    title:
+        label: 'Partner name'
+        span: auto
+        type: text
+    link:
+        label: Link
+        span: auto
+        type: text
+    image:
+        label: Image
+        span: auto
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload
+    is_active:
+        label: Status
+        span: auto
+        options:
+            - Deactive
+            - Active
+        type: dropdown

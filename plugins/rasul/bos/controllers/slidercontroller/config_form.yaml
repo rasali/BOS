@@ -1,0 +1,10 @@
+name: SliderController
+form: $/rasul/bos/models/slider/fields.yaml
+modelClass: Rasul\Bos\Models\Slider
+defaultRedirect: rasul/bos/slidercontroller
+create:
+    redirect: 'rasul/bos/slidercontroller/update/:id'
+    redirectClose: rasul/bos/slidercontroller
+update:
+    redirect: rasul/bos/slidercontroller
+    redirectClose: rasul/bos/slidercontroller

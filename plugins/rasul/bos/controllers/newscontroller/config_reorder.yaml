@@ -1,0 +1,4 @@
+title: NewsController
+modelClass: Rasul\Bos\Models\News
+toolbar:
+    buttons: reorder_toolbar

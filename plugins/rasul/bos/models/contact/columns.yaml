@@ -1,0 +1,19 @@
+columns:
+    id:
+        label: id
+        type: number
+    name:
+        label: name
+        type: text
+    surname:
+        label: surname
+        type: text
+    email:
+        label: email
+        type: text
+    phone:
+        label: phone
+        type: text
+    content:
+        label: content
+        type: text

@@ -1,0 +1,10 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    content:
+        label: Message
+        size: ''
+        span: auto
+        type: textarea

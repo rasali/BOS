@@ -1,0 +1,7 @@
+columns:
+    title:
+        label: 'Partner name'
+        type: text
+    link:
+        label: Link
+        type: text

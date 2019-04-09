@@ -1,0 +1,4 @@
+title: EducationController
+modelClass: Rasul\Bos\Models\Education
+toolbar:
+    buttons: reorder_toolbar

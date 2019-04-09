@@ -1,0 +1,48 @@
+fields:
+    title:
+        label: Title
+        span: auto
+        type: text
+    description:
+        label: Description
+        size: ''
+        span: auto
+        type: textarea
+    event_date:
+        label: 'Event date'
+        mode: date
+        span: auto
+        type: datepicker
+    time:
+        label: 'Event time'
+        mode: time
+        span: auto
+        type: datepicker
+    location:
+        label: Location
+        size: ''
+        span: auto
+        type: textarea
+    is_active:
+        label: Status
+        span: auto
+        options:
+            - Deactive
+            - Active
+        type: dropdown
+    image:
+        label: Image
+        span: auto
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: title
+            type: slug
+        type: text

@@ -1,0 +1,4 @@
+title: PartnerController
+modelClass: Rasul\Bos\Models\Partner
+toolbar:
+    buttons: reorder_toolbar

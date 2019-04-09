@@ -1,0 +1,10 @@
+columns:
+    title:
+        label: Title
+        type: text
+    description:
+        label: Description
+        type: text
+    event_date:
+        label: 'Event date'
+        type: datetime

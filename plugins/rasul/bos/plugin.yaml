@@ -1,0 +1,44 @@
+plugin:
+    name: 'rasul.bos::lang.plugin.name'
+    description: 'rasul.bos::lang.plugin.description'
+    author: Rasul
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: BOS
+        url: rasul/bos/partnercontroller
+        icon: icon-book
+        sideMenu:
+            side-menu-item:
+                label: Partner
+                url: rasul/bos/partnercontroller
+                icon: icon-building
+            side-menu-item2:
+                label: Slider
+                url: rasul/bos/slidercontroller
+                icon: icon-sitemap
+            side-menu-item3:
+                label: Mission
+                url: rasul/bos/missioncontroller
+                icon: icon-sitemap
+            side-menu-item4:
+                label: Education
+                url: rasul/bos/educationcontroller
+                icon: icon-sitemap
+            side-menu-item5:
+                label: Event
+                url: rasul/bos/eventcontroller
+                icon: icon-sitemap
+            side-menu-item6:
+                label: NEWS
+                url: rasul/bos/newscontroller
+                icon: icon-newspaper-o
+            side-menu-item7:
+                label: Statistic
+                url: rasul/bos/statisticcontroller
+                icon: icon-sitemap
+    main-menu-item2:
+        label: Contact
+        url: /
+        icon: icon-life-ring

@@ -1,0 +1,141 @@
+<header>
+    <div class="header_section">
+        <div class="site_container">
+            <button class="navbar-toggler" type="button">
+                <div class="icon" id="icon">
+                    <div class="top"></div>
+                    <div class="middle"></div>
+                    <div class="bottom"></div>
+                </div>
+            </button>
+            <div class="social-main">
+                <a href="" class="social_single">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="social_single">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <form action="" method="post">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="material-icons">search</i></button>
+                                    </span>
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <div>
+                        <a href=""><i class="material-icons">language</i><span>EN</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="site_container">
+        <div class="header_slider owl-carousel owl-theme">
+            <div>
+                <a href="#">
+                    <img src="{{ 'assets/img/slider1.png'|theme }}">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="{{ 'assets/img/slider1.png'|theme }}">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="{{ 'assets/img/slider3.png'|theme }}">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="{{ 'assets/img/slider4.png'|theme }}">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="{{ 'assets/img/slider5.png'|theme }}">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="{{ 'assets/img/slider6.png'|theme }}">
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="site_container">
+            <a class="navbar-brand" href="{{ 'homepage'|page }}">
+                <img src="{{ 'assets/img/header_logo.png'|theme }}">
+                <p>BAKU-OXFORD<br>SCHOOL</p>
+            </a>
+            <div class="mobile-nav animated slideOutLeft">
+
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropbtn" href="02-Azerbaycan-0.html">ABOUT US</a><i class="material-icons"></i>
+                            <div class="dropdown-content">
+                                <div>
+                                    <a href="#">HEAD OF SCHOOL WELCOME</a>
+                                    <a href="#">SCHOOL PROFILE</a>
+                                    <a href="#">GUIDING STATEMENTS</a>
+                                    <a href="">ACCREDITIONS AND AUTHORISATIONS</a>
+                                    <a href="">CALENDAR</a>
+                                    <a href="">COMMUNICATIONS AND PUBLICATIONS</a>
+                                    <a href="">EMPLOYMENT</a>
+                                    <a href="">GOVERNANCE</a>
+                                    <a href="">FACILITIES</a>
+                                    <a href="">FAQS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="03-Haqqimizda-0.html">ADMISSIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="04-Qanunvericilik-0.html">TEACHING & LEARNING</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropbtn" href="05-Tedbirler-0.html">STUDENT SERVICES</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="06-0-HLPF-0.html">COMMUNITY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="06-1-musabiqeler-0.html">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<script>
+    $('.header_section form input').css('width' , '0px');
+    $(document).on("click",".header_section form i" , function() {
+        $('.header_section form input').animate({
+                width : '150px',
+            }, 'slow'
+        );
+        $('.header_section form input').css('border-bottom' , '1px solid #fff')
+    })
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest('.header_section form .input-group').length) {
+            $('.header_section form input').animate({
+                    width : '0px',
+                }, 'slow'
+            );
+        }
+    });
+</script>

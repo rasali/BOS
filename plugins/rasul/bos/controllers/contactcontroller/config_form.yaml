@@ -1,0 +1,10 @@
+name: ContactController
+form: $/rasul/bos/models/contact/fields.yaml
+modelClass: Rasul\Bos\Models\Contact
+defaultRedirect: rasul/bos/contactcontroller
+create:
+    redirect: 'rasul/bos/contactcontroller/update/:id'
+    redirectClose: rasul/bos/contactcontroller
+update:
+    redirect: rasul/bos/contactcontroller
+    redirectClose: rasul/bos/contactcontroller

@@ -1,0 +1,4 @@
+title: StatisticController
+modelClass: Rasul\Bos\Models\Statistic
+toolbar:
+    buttons: reorder_toolbar

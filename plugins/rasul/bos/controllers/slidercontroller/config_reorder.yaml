@@ -1,0 +1,4 @@
+title: SliderController
+modelClass: Rasul\Bos\Models\Slider
+toolbar:
+    buttons: reorder_toolbar

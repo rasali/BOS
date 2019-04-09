@@ -1,0 +1,10 @@
+name: PartnerController
+form: $/rasul/bos/models/partner/fields.yaml
+modelClass: Rasul\Bos\Models\Partner
+defaultRedirect: rasul/bos/partnercontroller
+create:
+    redirect: 'rasul/bos/partnercontroller/update/:id'
+    redirectClose: rasul/bos/partnercontroller
+update:
+    redirect: rasul/bos/partnercontroller
+    redirectClose: rasul/bos/partnercontroller

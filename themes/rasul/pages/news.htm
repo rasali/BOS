@@ -1,0 +1,45 @@
+title = "news"
+url = "/news/:page?"
+layout = "default"
+is_hidden = 0
+
+[news]
+==
+<main class="news_page">
+    <div class="slider" style="background-image: url(' {{ 'assets/img/newsbg.png'|theme }} ')">
+        <div class="slider_text">
+            <div class="site_container">
+                <h2>news</h2>
+            </div>
+        </div>
+    </div>
+    <div class="site_container">
+        <div class="row">
+            <section class="section_news col-md-12">
+                <p class="page_title"></p>
+                <div class="row">
+                    {% for new in allnews %}
+                        <div class="col-lg-4 col-md-6">
+                            <article class="news_item">
+                                <div class="news_img">
+                                    <a href="{{ 'news-detail'|page({ slug:new.slug  }) }}"><img src="{{ new.image.path }}"></a>
+                                </div>
+                                <div class="news_info">
+                                    <a href="{{ 'news-detail'|page({ slug:new.slug  }) }}"><h3> {{ new.title }} </h3></a>
+                                    <p><i class="material-icons">&#xe192</i><span>{{ new.created_at| strftime('%d.%m.%Y') }}</span></p>
+                                    <a href="{{ 'news-detail'|page({ slug:new.slug  }) }}" class="read_more">READ MORE</a>
+                                </div>
+                            </article>
+                        </div>
+                    {% endfor %}
+
+                </div>
+                {#<ul class="pagination">#}
+                    {#<li class="page-item prev"><a class="page-link" href="#"><i class="material-icons">trending_flat</i><span>PREVIEW</span></a></li>#}
+                    {#<li class="page-item active"><a class="page-link" href="#">1</a></li>#}
+                    {#<li class="page-item next"><a class="page-link" href="#"><i class="material-icons">trending_flat</i><span>NEXT</span></a></li>#}
+                {#</ul>#}
+            </section>
+        </div>
+    </div>
+</main>

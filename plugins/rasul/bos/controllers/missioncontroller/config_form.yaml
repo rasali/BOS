@@ -1,0 +1,10 @@
+name: MissionController
+form: $/rasul/bos/models/mission/fields.yaml
+modelClass: Rasul\Bos\Models\Mission
+defaultRedirect: rasul/bos/missioncontroller
+create:
+    redirect: 'rasul/bos/missioncontroller/update/:id'
+    redirectClose: rasul/bos/missioncontroller
+update:
+    redirect: rasul/bos/missioncontroller
+    redirectClose: rasul/bos/missioncontroller

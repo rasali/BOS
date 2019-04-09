@@ -1,0 +1,12 @@
+list: $/rasul/bos/models/education/columns.yaml
+modelClass: Rasul\Bos\Models\Education
+title: EducationController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'rasul/bos/educationcontroller/update/:id'

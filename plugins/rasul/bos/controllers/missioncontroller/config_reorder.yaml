@@ -1,0 +1,4 @@
+title: MissionController
+modelClass: Rasul\Bos\Models\Mission
+toolbar:
+    buttons: reorder_toolbar

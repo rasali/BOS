@@ -1,0 +1,16 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    count:
+        label: Count
+        span: auto
+        type: text
+    is_active:
+        label: Status
+        span: auto
+        options:
+            - Deactive
+            - Active
+        type: dropdown

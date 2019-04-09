@@ -1,0 +1,10 @@
+name: EducationController
+form: $/rasul/bos/models/education/fields.yaml
+modelClass: Rasul\Bos\Models\Education
+defaultRedirect: rasul/bos/educationcontroller
+create:
+    redirect: 'rasul/bos/educationcontroller/update/:id'
+    redirectClose: rasul/bos/educationcontroller
+update:
+    redirect: rasul/bos/educationcontroller
+    redirectClose: rasul/bos/educationcontroller

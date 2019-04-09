@@ -1,0 +1,61 @@
+title = "News detail"
+url = "/news/detail/:slug"
+layout = "default"
+is_hidden = 0
+
+[news]
+
+[builderDetails]
+modelClass = "Rasul\Bos\Models\News"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "title"
+notFoundMessage = "Record not found"
+==
+
+<main class="news_page single_news_page">
+    <div class="slider" style="background-image: url('{{ 'assets/img/single-newsbg.png'|theme }}')">
+        <div class="slider_text">
+            <div class="site_container">
+                <h2>news detail</h2>
+            </div>
+        </div>
+    </div>
+    <div class="site_container">
+        <div class="row">
+            <section class="section_news col-md-8">
+                <div class="single_news">
+                    <div class="single_news_image">
+                        <img src={{ slg.image.path }}>
+                    </div>
+                    <div class="single_news_text">
+                        <h3>{{ slg.title }}</h3>
+                        <span><i class="material-icons">&#xe192</i><span>September 15, 2018</span></span>
+                        <p>{{ slg.description }}</p>
+                    </div>
+                    <div class="share">
+                        <p>SHARE NEWS</p>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </section>
+            <aside class="col-md-4 news-single_aside">
+                <h4>REALATED NEWS</h4>
+                <ul>
+                    {% for rel in related_news %}
+                        <li>
+                            <a href="" class="last_news_img">
+                                <img src={{ rel.image.path }}>
+                            </a>
+                            <div class="last_news_text">
+                                <a href=""><h4>{{ rel.title }}</h4></a>
+                                <span><i class="material-icons"></i><span>{{ rel.created_at | strftime('%d/%m/%Y') }}</span></span>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </aside>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,10 @@
+name: EventController
+form: $/rasul/bos/models/event/fields.yaml
+modelClass: Rasul\Bos\Models\Event
+defaultRedirect: rasul/bos/eventcontroller
+create:
+    redirect: 'rasul/bos/eventcontroller/update/:id'
+    redirectClose: rasul/bos/eventcontroller
+update:
+    redirect: rasul/bos/eventcontroller
+    redirectClose: rasul/bos/eventcontroller

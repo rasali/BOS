@@ -1,0 +1,10 @@
+name: NewsController
+form: $/rasul/bos/models/news/fields.yaml
+modelClass: Rasul\Bos\Models\News
+defaultRedirect: rasul/bos/newscontroller
+create:
+    redirect: 'rasul/bos/newscontroller/update/:id'
+    redirectClose: rasul/bos/newscontroller
+update:
+    redirect: rasul/bos/newscontroller
+    redirectClose: rasul/bos/newscontroller
