@@ -1,0 +1,18 @@
+title = "Search"
+url = "/search"
+layout = "default"
+is_hidden = 0
+
+[searchResults]
+resultsPerPage = 10
+showProviderBadge = 1
+noResultsMessage = "Your search returned no results."
+visitPageMessage = "Visit page"
+==
+<div class="slider" style="background-image: url('{{ 'assets/img/schoolbg.png'|theme }}')">
+    <div class="slider_text">
+        <div class="site_container">
+            <h2>SEarch result</h2>
+        </div>
+    </div>
+</div>{% component 'searchResults' %}

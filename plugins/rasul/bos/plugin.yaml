@@ -40,5 +40,5 @@ navigation:
                 icon: icon-sitemap
     main-menu-item2:
         label: Contact
-        url: /
+        url: rasul/bos/contactcontroller
         icon: icon-life-ring

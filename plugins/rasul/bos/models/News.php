@@ -26,6 +26,6 @@ class News extends Model
     ];
 
     public $attachOne = [
-        'image' => 'System\Models\File',
+        'image_n' => 'System\Models\File',
     ];
 }

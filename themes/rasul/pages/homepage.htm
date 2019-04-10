@@ -14,6 +14,8 @@ is_hidden = 0
 [news]
 
 [statistics]
+
+[siteSearchInclude]
 ==
 <main class="">
     <div class="slider-main owl-carousel">
@@ -96,7 +98,7 @@ is_hidden = 0
                     <div class="col-md-4">
                         <article class="news_item">
                             <div class="news_img">
-                                <a href="{{ 'news-detail'|page({ slug:new.slug  }) }}"><img src={{ new.image.path }}></a>
+                                <a href="{{ 'news-detail'|page({ slug:new.slug  }) }}"><img src={{ new.image_n.path }}></a>
                             </div>
                             <div class="news_info">
                                 <a href="{{ 'news-detail'|page({ slug:new.slug  }) }}"><h3>{{ new.title }}</h3></a>

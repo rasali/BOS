@@ -8,7 +8,7 @@ fields:
         size: ''
         span: auto
         type: textarea
-    image:
+    image_n:
         label: Image
         mode: image
         useCaption: true

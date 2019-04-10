@@ -1,0 +1,226 @@
+description = "Static layout"
+
+[staticPage]
+useContent = 1
+default = 0
+
+[staticMenu]
+code = "aboutus"
+==
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>BOS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/libs/normalize.css/normalize.css'|theme }}">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/libs/bootstrap/dist/css/bootstrap.min.css'|theme }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/libs/owl.carousel/owl.carousel.min.css'|theme }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/libs/animate.css/animate.min.css'|theme }}">
+
+    <link rel="stylesheet" href="{{ 'assets/css/main/main.min.css'|theme }}">
+</head>
+<body>
+<header>
+    <div class="header_section">
+        <div class="site_container">
+            <button class="navbar-toggler" type="button">
+                <div class="icon" id="icon">
+                    <div class="top"></div>
+                    <div class="middle"></div>
+                    <div class="bottom"></div>
+                </div>
+            </button>
+            <div class="social-main">
+                <a href="" class="social_single">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="social_single">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <form action="{{ 'search' | page }}" method="get">
+                        <div class="input-group">
+                            <input name="q" type="text" class="form-control" placeholder="Search" autocomplete="off">
+                            <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="material-icons">search</i></button>
+                                    </span>
+                        </div>
+                    </form>
+                </li>
+                {#<li>#}
+                {#<div>#}
+                {#<a href=""><i class="material-icons">language</i><span>EN</span></a>#}
+                {#</div>#}
+                {#</li>#}
+            </ul>
+        </div>
+    </div>
+    <div class="site_container">
+        <div class="header_slider owl-carousel owl-theme">
+            <div>
+                <a href="#">
+                    <img src="{{ 'assets/img/slider1.png'|theme }}">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="{{ 'assets/img/slider1.png'|theme }}">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="{{ 'assets/img/slider3.png'|theme }}">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="{{ 'assets/img/slider4.png'|theme }}">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="{{ 'assets/img/slider5.png'|theme }}">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="{{ 'assets/img/slider6.png'|theme }}">
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="site_container">
+            <a class="navbar-brand" href="{{ 'homepage'|page }}">
+                <img src="{{ 'assets/img/header_logo.png'|theme }}">
+                <p>BAKU-OXFORD<br>SCHOOL</p>
+            </a>
+            <div class="mobile-nav animated slideOutLeft">
+
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropbtn" href="02-Azerbaycan-0.html">
+                                {% component 'staticMenu' %}
+                            </a><i class="material-icons"></i>
+                            <div class="dropdown-content">
+                                <div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="03-Haqqimizda-0.html">ADMISSIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="04-Qanunvericilik-0.html">TEACHING & LEARNING</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropbtn" href="05-Tedbirler-0.html">STUDENT SERVICES</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="06-0-HLPF-0.html">COMMUNITY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ 'contact'|page }}">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<script>
+    $('.header_section form input').css('width' , '0px');
+    $(document).on("click",".header_section form i" , function() {
+        $('.header_section form input').animate({
+                width : '150px',
+            }, 'slow'
+        );
+        $('.header_section form input').css('border-bottom' , '1px solid #fff')
+    })
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest('.header_section form .input-group').length) {
+            $('.header_section form input').animate({
+                    width : '0px',
+                }, 'slow'
+            );
+        }
+    });
+</script>
+<div class="slider" style="background-image: url('{{ 'assets/img/schoolbg.png'|theme }}')">
+    <div class="slider_text">
+        <div class="site_container">
+            <h2>head of school welcome</h2>
+        </div>
+    </div>
+</div>
+
+
+{% page %}
+
+{% partial "footer" %}
+
+<script>window.jQuery || document.write('<script src="{{ 'assets/libs/jquery/dist/jquery.min.js'|theme }}"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="{{ 'assets/libs/bootstrap/dist/js/bootstrap.min.js'|theme }}" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<script type="text/javascript" src="{{ 'assets/libs/owl.carousel/owl.carousel.min.js'|theme }}"></script>
+
+<script type="text/javascript" src="{{ 'assets/libs/owl.carousel/owl.carousel.min.js'|theme }}"></script>
+
+<script src="{{ 'assets/libs/owl.carousel/owl.carousel.min.js'|theme }}"></script>
+<script src="{{ 'assets/libs/jquery-ui/jquery-ui.js'|theme }}"></script>
+<script src="{{ 'assets/js/all.js'|theme }}"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.
+<script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+</script>-->
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+<!-- <script>
+    $(document).on('click' , 'header .navbar-toggler-icon.material-icons' , function() {
+        $('header .navbar .navbar-collapse>.material-icons').show();
+    })
+    $(document).on('click' , 'header .navbar .navbar-collapse.show>.material-icons' , function() {
+        $('.navbar-collapse.collapse').removeClass('show');
+    })
+</script> -->
+{% framework extras %}
+{% scripts %}
+
+
+
+
+
+</body>
+
+</html>

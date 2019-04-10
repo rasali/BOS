@@ -1,0 +1,21 @@
+.form
+{
+    background-color: lightgray;
+    height: 150px;
+    padding: 20px;
+}
+.form h3
+{
+    color: white;
+}
+
+p
+{
+    color: brown;
+}
+
+textarea
+{
+    color: brown;
+    width: 100%;
+}

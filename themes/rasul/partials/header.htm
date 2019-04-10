@@ -18,20 +18,20 @@
             </div>
             <ul>
                 <li>
-                    <form action="" method="post">
+                    <form action="{{ 'search' | page }}" method="get">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search">
+                            <input name="q" type="text" class="form-control" placeholder="Search" autocomplete="off">
                             <span class="input-group-btn">
                                         <button class="btn btn-default" type="button"><i class="material-icons">search</i></button>
                                     </span>
                         </div>
                     </form>
                 </li>
-                <li>
-                    <div>
-                        <a href=""><i class="material-icons">language</i><span>EN</span></a>
-                    </div>
-                </li>
+                {#<li>#}
+                    {#<div>#}
+                        {#<a href=""><i class="material-icons">language</i><span>EN</span></a>#}
+                    {#</div>#}
+                {#</li>#}
             </ul>
         </div>
     </div>
@@ -85,7 +85,7 @@
                             <a class="nav-link dropbtn" href="02-Azerbaycan-0.html">ABOUT US</a><i class="material-icons"></i>
                             <div class="dropdown-content">
                                 <div>
-                                    <a href="#">HEAD OF SCHOOL WELCOME</a>
+                                    <a href="{{ 'head-school-welcome'|page }}">HEAD OF SCHOOL WELCOME</a>
                                     <a href="#">SCHOOL PROFILE</a>
                                     <a href="#">GUIDING STATEMENTS</a>
                                     <a href="">ACCREDITIONS AND AUTHORISATIONS</a>
@@ -114,7 +114,7 @@
                         <a class="nav-link" href="06-0-HLPF-0.html">COMMUNITY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="06-1-musabiqeler-0.html">CONTACT US</a>
+                        <a class="nav-link" href="{{ 'contact'|page }}">CONTACT US</a>
                     </li>
                 </ul>
             </div>

@@ -21,7 +21,10 @@ class ContactComponent extends ComponentBase
         return [];
     }
 
-    public function onSend(){
+
+
+    public function onSendd(){
+        dd('dry');
         $vars = [
             'name' => Input::get('name'),
             'surname' => Input::get('surname'),
@@ -36,8 +39,10 @@ class ContactComponent extends ComponentBase
             $message->subject('You have a new message');
 
         });
+       $contact = Contact::create($vars);
+       dd($contact);
 
-        Contact::insert('insert into  rasul_bos_contacts (name, surname, email, phone, content) values (?,?)');
+
 
         //dd(request()->all());
 //

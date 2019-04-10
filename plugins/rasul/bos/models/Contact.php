@@ -13,6 +13,7 @@ class Contact extends Model
 
     protected $dates = ['deleted_at'];
 
+    protected $guarded = [];
 
     /**
      * @var string The database table used by the model.

@@ -48,3 +48,9 @@
 1.0.17:
     - 'Created table rasul_bos_contacts'
     - builder_table_create_rasul_bos_contacts_2.php
+1.0.18:
+    - 'Updated table rasul_bos_contacts'
+    - builder_table_update_rasul_bos_contacts.php
+1.0.19:
+    - 'Updated table rasul_bos_contacts'
+    - builder_table_update_rasul_bos_contacts_2.php

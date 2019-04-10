@@ -26,17 +26,17 @@ notFoundMessage = "Record not found"
             <section class="section_news col-md-8">
                 <div class="single_news">
                     <div class="single_news_image">
-                        <img src={{ slg.image.path }}>
+                        <img src={{ slg.image_n.path }}>
                     </div>
                     <div class="single_news_text">
                         <h3>{{ slg.title }}</h3>
-                        <span><i class="material-icons">&#xe192</i><span>September 15, 2018</span></span>
+                        <span><i class="material-icons">&#xe192</i><span>{{ slg.created_at | strftime('%d/%m/%Y')}}</span></span>
                         <p>{{ slg.description }}</p>
                     </div>
                     <div class="share">
                         <p>SHARE NEWS</p>
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a target="_blank" href="http://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a target="_blank" href="http://twitter.com"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </section>
@@ -46,10 +46,10 @@ notFoundMessage = "Record not found"
                     {% for rel in related_news %}
                         <li>
                             <a href="" class="last_news_img">
-                                <img src={{ rel.image.path }}>
+                                <img src={{ rel.image_n.path }}>
                             </a>
                             <div class="last_news_text">
-                                <a href=""><h4>{{ rel.title }}</h4></a>
+                                <a href="{{ 'news-detail'|page({ slug:rel.slug  }) }}"><h4>{{ rel.title }}</h4></a>
                                 <span><i class="material-icons"></i><span>{{ rel.created_at | strftime('%d/%m/%Y') }}</span></span>
                             </div>
                         </li>
