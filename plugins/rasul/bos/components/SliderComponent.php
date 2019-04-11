@@ -18,20 +18,4 @@ class SliderComponent extends ComponentBase
         return [];
     }
 
-
-    public function onRun()
-    {
-
-        $this->page['slider'] = $this->listSlider();
-
-    }
-
-    protected function listSlider()
-    {
-
-        $model = new Slider();
-
-        return $model->get();
-
-    }
 }

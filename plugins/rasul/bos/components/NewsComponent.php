@@ -42,7 +42,6 @@ class NewsComponent extends ComponentBase
 
 
 
-
         $this->page['news'] = $news->get();
         $this->page['allnews'] = $allnews->get();
         $this->page['related_news'] = $related_news->get();

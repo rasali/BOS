@@ -18,18 +18,4 @@ class MissionComponent extends ComponentBase
         return [];
     }
 
-    public function onRun()
-    {
-
-        $this->page['missions'] = $this->listMission();
-
-    }
-
-    protected function listMission()
-    {
-
-        $model = new Mission();
-
-        return $model->get();
-    }
 }

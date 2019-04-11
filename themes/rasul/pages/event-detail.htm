@@ -40,15 +40,15 @@ notFoundMessage = "Record not found"
                 </div>
             </section>
             <aside class="col-md-4 news-single_aside">
-                <h4>ALL EVENTS</h4>
+                <h4>OTHER EVENTS</h4>
                 <ul>
                     {% for other in other_events %}
                         <li>
-                            <a href="" class="last_news_img">
+                            <a href="{{ 'event-detail'|page({ slug:other.slug  }) }}" class="last_news_img">
                                 <img src={{ other.image.path }}>
                             </a>
                             <div class="last_news_text">
-                                <a href=""><h4>{{ other.title }}</h4></a>
+                                <a href="{{ 'event-detail'|page({ slug:other.slug  }) }}"><h4>{{ other.title }}</h4></a>
                                 <span><i class="material-icons"></i><span>{{ other.created_at | strftime('%d/%m/%Y') }}</span></span>
                             </div>
                         </li>

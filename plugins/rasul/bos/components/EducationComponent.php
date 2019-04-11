@@ -17,19 +17,4 @@ class EducationComponent extends ComponentBase
     {
         return [];
     }
-
-    public function onRun()
-    {
-
-        $this->page['educations'] = $this->listEducation();
-
-    }
-
-    protected function listEducation()
-    {
-
-        $model = new Education();
-
-        return $model->get();
-    }
 }

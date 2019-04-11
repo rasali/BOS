@@ -34,7 +34,9 @@ class EventComponent extends ComponentBase
 
         $events = Event::where('is_active',1)->orderBy('id','ASC')->limit(4);
         $events_id = Event::where('is_active',1)->orderBy('id','ASC')->pluck('id')->toArray();
-        $other_events = Event::where('is_active',1)->orderBy('id','ASC');
+
+        $this_event_id = Event::where('id',$events_id)->orderBy('id','ASC')->get();
+        $other_events = Event::where('is_active',1)->orderBy('id','ASC')->whereNotIn('id',$this_event_id);
 
         $this->page['events'] = $events->get();
         $this->page['other_events'] = $other_events->get();

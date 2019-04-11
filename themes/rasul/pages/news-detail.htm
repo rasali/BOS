@@ -45,7 +45,7 @@ notFoundMessage = "Record not found"
                 <ul>
                     {% for rel in related_news %}
                         <li>
-                            <a href="" class="last_news_img">
+                            <a href="{{ 'news-detail'|page({ slug:rel.slug  }) }}" class="last_news_img">
                                 <img src={{ rel.image_n.path }}>
                             </a>
                             <div class="last_news_text">

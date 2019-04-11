@@ -18,18 +18,4 @@ class StatisticComponent extends ComponentBase
         return [];
     }
 
-    public function onRun()
-    {
-
-        $this->page['statistics'] = $this->listStatistic();
-
-    }
-
-    protected function listStatistic()
-    {
-
-        $model = new Statistic();
-
-        return $model->get();
-    }
 }

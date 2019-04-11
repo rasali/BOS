@@ -10,10 +10,11 @@ class Plugin extends PluginBase
             'Rasul\Bos\Components\SliderComponent' => 'slider',
             'Rasul\Bos\Components\MissionComponent' => 'missions',
             'Rasul\Bos\Components\EducationComponent' => 'educations',
+            'Rasul\Bos\Components\PartnerComponent' => 'partners',
             'Rasul\Bos\Components\EventComponent' => 'events',
             'Rasul\Bos\Components\NewsComponent' => 'news',
             'Rasul\Bos\Components\StatisticComponent' => 'statistics',
-            'Rasul\Bos\Components\ContacComponent' => 'ContacComponent',
+            'Rasul\Bos\Components\HomeComponent' => 'home',
             'Rasul\Bos\Components\C' => 'c',
         ];
     }
