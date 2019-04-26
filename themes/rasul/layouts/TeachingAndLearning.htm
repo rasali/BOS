@@ -1,18 +1,25 @@
-description = "Static layout"
+description = "teachingandlearning"
 
 [staticPage]
 useContent = 1
 default = 0
 
+[staticMenu header]
+code = "header"
+
 [staticMenu left]
-code = "about-us"
+code = "teaching-and-learning"
 ==
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html class="no-js" lang="az" style="overflow-x: hidden; max-width: 100%;">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>BOS</title>
+    <title>{{ this.page.title }} | Baku Oxford School</title>
+    
+
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,8 +46,26 @@ code = "about-us"
 
     <link rel="stylesheet" href="{{ 'assets/css/main/main.min.css'|theme }}">
 </head>
-<body>
+
+<body style=" max-width: 100%; overflow-x: hidden;">
+
+<!--[if lte IE 9]>
+
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+
+<![endif]-->
+
+
+
+<header>
+
 {% partial "static-header" %}
+
+
+</header>
+
+
+
 <script>
 
     $('.header_section form input').css('width' , '0px');
@@ -76,32 +101,41 @@ code = "about-us"
     });
 
 </script>
-<div class="slider" style="background-image: url('{{ 'assets/img/schoolbg.png'|theme }}')">
-    <div class="slider_text">
-        <div class="site_container">
-            <h2>{{ this.page.title }}</h2>
+
+
+<main class="about_page">
+    <div class="slider" style="background-image: url('{{ 'assets/img/schoolbg.png'|theme }}')">
+        <div class="slider_overlay"></div>
+        <div class="slider_text">
+            <div class="site_container">
+                <h2>{{ this.page.title }}</h2>
+            </div>
         </div>
     </div>
-</div>
-    <div class="site_container" style="padding: 15px 0 15px 0px; margin-bottom: 50px;">
+    <div class="site_container">
         <div class="row">
-
-
             {% partial "staticPage/leftAside" items=left.menuItems %}
 
-            <hr>
-            <section class="section_about offset-md-1 col-md-8">
-                <h1 style="font-weight: bold">{{ this.page.title }}</h1><br>
-                {% page %}
-            </section>
+            <section class="section_content offset-md-1 col-md-8">
+                <div>
+                    <p class="page_title">{{this.page.title  }}</p>
 
+                    {% page %}
+
+                </div>
+            </section>
 
         </div>
     </div>
+</main>
+
+
+
+
+
+
+
 {% partial "static-footer" %}
-
-
-
 <script>window.jQuery || document.write('<script src="{{ 'assets/libs/jquery/dist/jquery.min.js'|theme }}"><\/script>')</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -149,6 +183,15 @@ code = "about-us"
 
 {% framework extras %}
 {% scripts %}
+
+
+
+
+
+
+
+
+
 
 
 </body>

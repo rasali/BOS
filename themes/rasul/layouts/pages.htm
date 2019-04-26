@@ -1,0 +1,87 @@
+[staticMenu header]
+code = "header"
+==
+<!doctype html>
+
+<html class="no-js" lang="az" style="overflow-x: hidden; max-width: 100%;">
+
+<head>
+    <title>{{ this.page.title }} | Baku Oxford School</title>
+    
+
+</head>
+
+<body style=" max-width: 100%; overflow-x: hidden;">
+
+<!--[if lte IE 9]>
+
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+
+<![endif]-->
+
+
+
+<header>
+
+{% partial "header" %}
+
+
+</header>
+
+
+
+<script>
+
+    $('.header_section form input').css('width' , '0px');
+
+    $(document).on("click",".header_section form i" , function() {
+
+        $('.header_section form input').animate({
+
+                width : '150px',
+
+            }, 'slow'
+
+        );
+
+        $('.header_section form input').css('border-bottom' , '1px solid #fff')
+
+    })
+
+    $(document).on('click', function (event) {
+
+        if (!$(event.target).closest('.header_section form .input-group').length) {
+            $("#searchInput").val("");
+            $('.header_section form input').animate({
+
+                    width : '0px',
+
+                }, 'slow'
+
+            );
+
+        }
+
+    });
+
+</script>
+
+
+
+{% page %}
+
+
+
+
+
+{% partial "footer" %}
+
+
+
+
+
+
+
+</body>
+
+</html>

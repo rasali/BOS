@@ -1,0 +1,65 @@
+name: 'Teaching and learning'
+items:
+    -
+        title: 'CURRİCULUM AND ASSESSMENT'
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: curriculum-and-assessment
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'EARLY YEARS'
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: early-years
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'PRİMARY SCHOOL'
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: primary-school
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'SECONDARY SCHOOL'
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: secondary-school
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'INFORMATİON TECHNOLOGY'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: information-technology
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

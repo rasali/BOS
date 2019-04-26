@@ -1,0 +1,17 @@
+[viewBag]
+==
+{% for item in items if not item.viewBag.isHidden %}
+
+
+    {% if item.url %}
+        <a class=" {{ item.isActive or item.isChildActive ? 'active' : '' }}"
+           href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }}>
+            {{ item.title|upper }}
+        </a>
+    {% else %}
+        <a href="javascript:void(0)"
+           class=" no-link  {{ item.isActive or item.isChildActive ? 'active' : '' }}"> {{ item.title|upper }}</a>
+    {% endif %}
+
+
+{% endfor %}

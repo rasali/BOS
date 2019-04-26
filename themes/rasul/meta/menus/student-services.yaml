@@ -1,0 +1,104 @@
+name: 'Student services'
+items:
+    -
+        title: 'GUİDANCE COUNSELLİNG'
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: guidance-counselling
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'LEARNİNG SUPPORt'
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: learning-support
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'ENGLİSH AS AN ADDİTİONAL LANGUAGE (EAL)'
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: english-additional-language-eal
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'SCHOOL PYSYCHOLOGİST'
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: school-pysychologist
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'HEALTH SUPPORT'
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: health-support
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'STUDENT COUNCİL'
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: student-council
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'ENRİCHMENT PROGRAMME'
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: enrichment-programme
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'SCHOOL SHOP'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: school-shop
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

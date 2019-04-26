@@ -1,0 +1,47 @@
+[viewBag]
+==
+{% for item in items if not item.viewBag.isHidden %}
+    {% if item.items %}
+        <li
+            class="nav-item {{ item.isActive ? 'nav__li-active' : '' }} {{ item.isChildActive ? 'child-active' : '' }} {{ item.viewBag.cssClass }}">
+            <div class="dropdown">
+                {% if item.url %}
+                    <a class="nav-link dropbtn {{ item.isActive or item.isChildActive ? 'nav__a-active' : '' }}"
+                       href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }} data-toggle="dropdown">
+                        {{ item.title |upper }}
+                    </a>
+                    <i class="material-icons"></i>
+                {% else %}
+                    <a href="javascript:void(0)"
+                       class="no-link nav-link dropbtn {{ item.isActive or item.isChildActive ? 'nav__a-active' : '' }}"> {{ item.title|upper }} </a>
+                    <i class="material-icons"></i>
+                {% endif %}
+
+                {% if item.items %}
+                    <div class="dropdown-content">
+
+                        <div>
+                            {% partial "navSub" items=item.items %}
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </li>
+    {% else %}
+
+        <li
+            class="nav-item {{ item.isActive ? 'nav__li-active' : '' }} {{ item.isChildActive ? 'child-active' : '' }} {{ item.viewBag.cssClass }}">
+            {% if item.url %}
+                <a class="nav-link {{ item.isActive or item.isChildActive ? 'nav__a-active' : '' }}"
+                   href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }}>
+                    {{ item.title|upper }}
+                </a>
+            {% else %}
+                <a href="javascript:void(0)"
+                   class="nav-link no-link  {{ item.isActive or item.isChildActive ? 'nav__a-active' : '' }}"> {{ item.title|upper }}</a>
+            {% endif %}
+
+
+        </li>
+    {% endif %}
+{% endfor %}

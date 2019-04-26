@@ -5,12 +5,7 @@ is_hidden = 0
 
 [news]
 
-[builderDetails]
-modelClass = "Rasul\Bos\Models\News"
-identifierValue = "{{ :slug }}"
-modelKeyColumn = "slug"
-displayColumn = "title"
-notFoundMessage = "Record not found"
+
 ==
 
 <main class="news_page single_news_page">
@@ -26,12 +21,12 @@ notFoundMessage = "Record not found"
             <section class="section_news col-md-8">
                 <div class="single_news">
                     <div class="single_news_image">
-                        <img src={{ slg.image_n.path }}>
+                        <img src={{ news.image_n.path }}>
                     </div>
                     <div class="single_news_text">
-                        <h3>{{ slg.title }}</h3>
-                        <span><i class="material-icons">&#xe192</i><span>{{ slg.created_at | strftime('%d/%m/%Y')}}</span></span>
-                        <p>{{ slg.description }}</p>
+                        <h3>{{ news.title }}</h3>
+                        <span><i class="material-icons">&#xe192</i><span>{{ news.created_at | strftime('%d/%m/%Y')}}</span></span>
+                        <p>{{ news.description }}</p>
                     </div>
                     <div class="share">
                         <p>SHARE NEWS</p>
@@ -43,14 +38,14 @@ notFoundMessage = "Record not found"
             <aside class="col-md-4 news-single_aside">
                 <h4>REALATED NEWS</h4>
                 <ul>
-                    {% for rel in related_news %}
+                    {% for rec in related_news %}
                         <li>
-                            <a href="{{ 'news-detail'|page({ slug:rel.slug  }) }}" class="last_news_img">
-                                <img src={{ rel.image_n.path }}>
+                            <a href="{{ 'news-detail'|page({ slug:rec.slug  }) }}" class="last_news_img">
+                                <img src={{ rec.image_n.path }}>
                             </a>
                             <div class="last_news_text">
-                                <a href="{{ 'news-detail'|page({ slug:rel.slug  }) }}"><h4>{{ rel.title }}</h4></a>
-                                <span><i class="material-icons"></i><span>{{ rel.created_at | strftime('%d/%m/%Y') }}</span></span>
+                                <a href="{{ 'news-detail'|page({ slug:rec.slug  }) }}"><h4>{{ rec.title }}</h4></a>
+                                <span><i class="material-icons"></i><span>{{ rec.created_at | strftime('%d/%m/%Y') }}</span></span>
                             </div>
                         </li>
                     {% endfor %}

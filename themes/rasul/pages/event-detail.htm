@@ -3,14 +3,7 @@ url = "/event/detail/:slug"
 layout = "default"
 is_hidden = 0
 
-[events]
-
-[builderDetails]
-modelClass = "Rasul\Bos\Models\Event"
-identifierValue = "{{ :slug }}"
-modelKeyColumn = "slug"
-displayColumn = "title"
-notFoundMessage = "Record not found"
+[Rasul\Bos\Components\EventDetailComponent events]
 ==
 <main class="news_page single_news_page">
     <div class="slider" style="background-image: url('{{ 'assets/img/single-newsbg.png'|theme }}')">
@@ -25,12 +18,12 @@ notFoundMessage = "Record not found"
             <section class="section_news col-md-8">
                 <div class="single_news">
                     <div class="single_news_image">
-                        <img src={{ slg.image.path }}>
+                        <img src={{ events.image.path }}>
                     </div>
                     <div class="single_news_text">
-                        <h3>{{ slg.title }}</h3>
+                        <h3>{{ events.title }}</h3>
                         <span><i class="material-icons">&#xe192</i><span>September 15, 2018</span></span>
-                        <p>{{ slg.description }}</p>
+                        <p>{{ events.description }}</p>
                     </div>
                     <div class="share">
                         <p>SHARE NEWS</p>
@@ -42,14 +35,14 @@ notFoundMessage = "Record not found"
             <aside class="col-md-4 news-single_aside">
                 <h4>OTHER EVENTS</h4>
                 <ul>
-                    {% for other in other_events %}
+                    {% for rec in otherEvent %}
                         <li>
-                            <a href="{{ 'event-detail'|page({ slug:other.slug  }) }}" class="last_news_img">
-                                <img src={{ other.image.path }}>
+                            <a href="{{ 'event-detail'|page({ slug:rec.slug  }) }}" class="last_news_img">
+                                <img src={{ rec.image.path }}>
                             </a>
                             <div class="last_news_text">
-                                <a href="{{ 'event-detail'|page({ slug:other.slug  }) }}"><h4>{{ other.title }}</h4></a>
-                                <span><i class="material-icons"></i><span>{{ other.created_at | strftime('%d/%m/%Y') }}</span></span>
+                                <a href="{{ 'event-detail'|page({ slug:rec.slug  }) }}"><h4>{{ rec.title }}</h4></a>
+                                <span><i class="material-icons"></i><span>{{ rec.created_at | strftime('%d/%m/%Y') }}</span></span>
                             </div>
                         </li>
                     {% endfor %}

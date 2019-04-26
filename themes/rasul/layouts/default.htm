@@ -1,4 +1,7 @@
 description = "Default layout"
+
+[staticMenu header]
+code = "header"
 ==
 <!DOCTYPE html>
 <html>
@@ -33,6 +36,42 @@ description = "Default layout"
 </head>
 <body>
 {% partial "header" %}
+
+<script>
+
+    $('.header_section form input').css('width' , '0px');
+
+        $(document).on("click",".header_section form .btn.btn-default" , function() {
+
+        $('.header_section form input').animate({
+
+                width : '150px',
+
+            }, 'slow'
+
+        );
+
+        $('.header_section form input').css('border-bottom' , '1px solid #fff')
+
+    })
+
+    $(document).on('click', function (event) {
+
+        if (!$(event.target).closest('.header_section form .input-group').length) {
+
+            $('.header_section form input').animate({
+
+                    width : '0px',
+
+                }, 'slow'
+
+            );
+
+        }
+
+    });
+
+</script>
 
 {% page %}
 

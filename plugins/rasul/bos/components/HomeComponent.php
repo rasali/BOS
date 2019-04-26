@@ -2,7 +2,9 @@
 
 use Cms\Classes\ComponentBase;
 use Rasul\Bos\Models\Education;
+use Rasul\Bos\Models\Event;
 use Rasul\Bos\Models\Mission;
+use Rasul\Bos\Models\News;
 use Rasul\Bos\Models\Slider;
 use Rasul\Bos\Models\Statistic;
 
@@ -27,6 +29,8 @@ class HomeComponent extends ComponentBase
         $this->page['missions'] = $this->listMission();
         $this->page['slider'] = $this->listSlider();
         $this->page['statistics'] = $this->listStatic();
+        $this->page['news'] = $this->listNews();
+        $this->page['events'] = $this->listEvent();
     }
 
     protected function listEducation()
@@ -54,6 +58,17 @@ class HomeComponent extends ComponentBase
         return $model->where('is_active', 1)->get();
     }
 
+    protected function listNews()
+    {
+        $model = new News();
+        return $model->where('is_active', 1)->orderBy('id','DESC')->limit(3)->get();
+    }
+
+    protected function listEvent()
+    {
+        $model = new Event();
+        return $model->where('is_active', 1)->orderBy('id','DESC')->limit(4)->get();
+    }
 
 
 }

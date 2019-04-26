@@ -1,0 +1,90 @@
+name: 'About Us'
+items:
+    -
+        title: 'HEAD OF SCHOOL WELCOME'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: head-school-welcome
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'SCHOOL PROFİLE'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: school-profile
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'GUIDING STATEMENTS'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: guiding-statements
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'ACCREDİTATİONS AND AUTHORİSATİONS'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: accreditations-and-authorisations
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: EMPLOYMENT
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: employment
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: GOVERNANCE
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: governance
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: FACİLİTİES
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: facilities
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: FAQ
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: faq
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

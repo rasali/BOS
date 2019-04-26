@@ -1,4 +1,35 @@
 static-pages:
-    head-school-welcome: {  }
     school-profile: {  }
+    head-school-welcome: {  }
+    baku-oxford-school-guiding-statements: {  }
+    accreditations-and-authorisations: {  }
+    calendar: {  }
+    communications-and-publications: {  }
+    employment: {  }
+    governance: {  }
+    facilities: {  }
+    faq: {  }
     guiding-statements: {  }
+    enrollment-procedures: {  }
+    tuition-and-fees: {  }
+    uniforms: {  }
+    bus-service: {  }
+    security-cards: {  }
+    arrange-visit: {  }
+    online-application: {  }
+    curriculum-and-assessment: {  }
+    early-years: {  }
+    primary-school: {  }
+    secondary-school: {  }
+    information-technology: {  }
+    guidance-counselling: {  }
+    learning-support: {  }
+    english-additional-language-eal: {  }
+    school-pysychologist: {  }
+    health-support: {  }
+    student-council: {  }
+    enrichment-programme: {  }
+    school-shop: {  }
+    parent-teacher-association-pta: {  }
+    alumni: {  }
+    living-baku: {  }

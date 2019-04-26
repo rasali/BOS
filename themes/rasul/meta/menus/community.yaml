@@ -1,0 +1,39 @@
+name: Community
+items:
+    -
+        title: 'PARENT-TEACHER ASSOCİATİON (PTA)'
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: parent-teacher-association-pta
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: ALUMNİ
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: alumni
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'LİVİNG İN BAKU'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: living-baku
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

@@ -3,7 +3,7 @@ url = "/news/:page?"
 layout = "default"
 is_hidden = 0
 
-[news]
+[Rasul\Bos\Components\NewsComponent news]
 ==
 <main class="news_page">
     <div class="slider" style="background-image: url(' {{ 'assets/img/newsbg.png'|theme }} ')">
@@ -18,7 +18,7 @@ is_hidden = 0
             <section class="section_news col-md-12">
                 <p class="page_title"></p>
                 <div class="row">
-                    {% for new in allnews %}
+                    {% for new in all_news %}
                         <div class="col-lg-4 col-md-6">
                             <article class="news_item">
                                 <div class="news_img">

@@ -1,0 +1,399 @@
+name: Header
+items:
+    -
+        title: 'ABOUT US'
+        nesting: ''
+        type: header
+        url: ''
+        code: ''
+        reference: ''
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'HEAD OF SCHOOL WELCOME'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: head-school-welcome
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'SCHOOL PROFİLE'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: school-profile
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'GUIDING STATEMENTS'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: guiding-statements
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'ACCREDİTATİONS AND AUTHORİSATİONS'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: accreditations-and-authorisations
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: CALENDAR
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: calendar
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'COMMUNİCATİONS AND PUBLİCATİONS'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: communications-and-publications
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: EMPLOYMENT
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: employment
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: FACİLİTİES
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: facilities
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: FAQ
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: faq
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: ADMISSIONS
+        nesting: ''
+        type: header
+        url: ''
+        code: ''
+        reference: ''
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'TUİTİON AND FEES'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: tuition-and-fees
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: UNİFORMS
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: uniforms
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Enrollment procedures'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: enrollment-procedures
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'BUS SERVİCE'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: bus-service
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'SECURİTY CARDS'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: security-cards
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'ARRANGE A VİSİT'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: arrange-visit
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'ONLİNE APPLİCATİON'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: online-application
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: 'TEACHING & LEARNING'
+        nesting: ''
+        type: header
+        url: ''
+        code: ''
+        reference: ''
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'CURRİCULUM AND ASSESSMENT'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: curriculum-and-assessment
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'EARLY YEARS'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: early-years
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'PRİMARY SCHOOL'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: primary-school
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'SECONDARY SCHOOL'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: secondary-school
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'INFORMATİON TECHNOLOGY'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: information-technology
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: 'STUDENT SERVICES'
+        nesting: ''
+        type: header
+        url: ''
+        code: ''
+        reference: ''
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'GUİDANCE COUNSELLİNG'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: guidance-counselling
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'LEARNİNG SUPPORT'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: learning-support
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: Community
+        type: header
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'PARENT-TEACHER ASSOCİATİON (PTA)'
+                nesting: '0'
+                type: static-page
+                code: ''
+                reference: parent-teacher-association-pta
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: ALUMNİ
+                nesting: '0'
+                type: static-page
+                code: ''
+                reference: alumni
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'LİVİNG İN BAKU'
+                nesting: '0'
+                type: static-page
+                code: ''
+                reference: living-baku
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'

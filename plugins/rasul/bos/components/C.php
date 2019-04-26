@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Mail;
 use Rasul\Bos\Models\Contact;
-use Illuminate\Support\Facades\Redirect;
+
 
 class C extends ComponentBase
 {
@@ -58,7 +58,7 @@ class C extends ComponentBase
 
             $message->to('admin@domain.tld', 'Admin Person');
             $message->subject('You have a new message');
-
+    
         });
         $contact = Contact::create($vars);
 

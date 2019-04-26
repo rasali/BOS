@@ -1,0 +1,79 @@
+name: Admissions
+items:
+    -
+        title: 'TUİTİON AND FEES'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: tuition-and-fees
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: UNİFORMS
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: uniforms
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Enrollment procedures'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: enrollment-procedures
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'BUS SERVİCE'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: bus-service
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'SECURİTY CARDS'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: security-cards
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'ARRANGE A VİSİT'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: arrange-visit
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'ONLİNE APPLİCATİON'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: online-application
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

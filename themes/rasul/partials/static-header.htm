@@ -1,9 +1,9 @@
 [viewBag]
 
-[partners]
-
 [staticMenu header]
 code = "header"
+
+[partners]
 ==
 <header>
     <div class="header_section">
@@ -29,28 +29,18 @@ code = "header"
                         <div class="input-group">
                             <input name="q" type="text" class="form-control" placeholder="Search" autocomplete="off">
                             <span class="input-group-btn">
-                                        <button class="btn btn-default" type="button"><i class="material-icons">search</i></button>
+                                        <button class="btn btn-default" type="button"><i
+                                                class="material-icons">search</i></button>
                                     </span>
                         </div>
                     </form>
                 </li>
                 {#<li>#}
-                    {#<div>#}
-                        {#<a href=""><i class="material-icons">language</i><span>EN</span></a>#}
-                    {#</div>#}
+                {#<div>#}
+                {#<a href=""><i class="material-icons">language</i><span>EN</span></a>#}
+                {#</div>#}
                 {#</li>#}
             </ul>
-        </div>
-    </div>
-    <div class="site_container">
-        <div class="header_slider owl-carousel owl-theme">
-            {% for part in partner %}
-                <div>
-                    <a target="_blank" href="{{ part.link }}">
-                        <img src={{ part.image.path }}>
-                    </a>
-                </div>
-            {% endfor %}
         </div>
     </div>
     <nav class="navbar navbar-expand-lg">
@@ -73,18 +63,18 @@ code = "header"
     </nav>
 </header>
 <script>
-    $('.header_section form input').css('width' , '0px');
-    $(document).on("click",".header_section form i" , function() {
+    $('.header_section form input').css('width', '0px');
+    $(document).on("click", ".header_section form i", function () {
         $('.header_section form input').animate({
-                width : '150px',
+                width: '150px',
             }, 'slow'
         );
-        $('.header_section form input').css('border-bottom' , '1px solid #fff')
+        $('.header_section form input').css('border-bottom', '1px solid #fff')
     })
     $(document).on('click', function (event) {
         if (!$(event.target).closest('.header_section form .input-group').length) {
             $('.header_section form input').animate({
-                    width : '0px',
+                    width: '0px',
                 }, 'slow'
             );
         }
